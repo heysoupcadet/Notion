@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
   <style>
-    :root                    {  --my-color:        #3c3c3c;
-                                --my-color-accent: #2d2d2d;                             }
-
-    button                   {  background:        none;
-                                color:             inherit;
-                                border:            none;
-                                padding:           0;
-                                font:              inherit;
-                                cursor:            pointer;
-                                outline:           inherit;                             }
-
-    i                        {  padding-right:     2px;                                 }
-
-    .my-color                {  background-color:  var(--my-color);                     }
-    .my-color:hover          {  background-color:  var(--my-color-accent);              }
-    .my-color.threeD         {  box-shadow:        0px 4px 0px var(--my-color-accent);  }
-    .my-color.threeD:active  {  box-shadow:        0 0;
-                                background-color:  var(--my-color-accent);              }
-
-
-    .btn-group button        {  padding:           10px 20px;
-                                width:             100%;
-                                display:           flex;
-                                justify-content:   space-between;}
-    
-    .btn                     {  type:              button;
-                                text-align:        center;
-                                font-family:       helvetica;
-                                font-size:         18px;
-                                display:           inline-block;
-                                color:             my-color;
-                                size:              large;
-                                width:             12%;
-                                border-radius:     15px;
-                                padding:           15px 60px;
-                                box-shadow:        0px 4px 0px var(--my-color-accent);   }
-
+    button        {  width:             12%;
+                     padding:           15px 60px;
+                     border-radius:     15px;
+                     background-color:  #3c3c3c;
+                     box-shadow:        0px 4px 2px  #2d2d2d;
+                     text-align:        center;
+                     font-family:       helvetica;
+                     font-size:         18px;
+                     color:             #ffffff;
+                     cursor:            pointer;
+                  }
+    button:hover  {  background-color:  #2d2d2d;
+                     box-shadow-color:  #000000;
+                  }
+    button:active {  box-shadow-color:  none;
+                  }
+    div           {  display:           flex;
+                     justify-content:   space-between;
+                     padding:           10px 20px;
+                     width:             100%;
+                  }
   </style>
 </head>
 
 <body>
-  <div class="btn-group">
-    <button class="btn" onclick="navigate1()">  Areas      </button>
-    <button class="btn" onclick="navigate2()">  Projects   </button>  
-    <button class="btn" onclick="navigate3()">  Tasks      </button>
-    <button class="btn" onclick="navigate4()">  Resources  </button>
-    <button class="btn" onclick="navigate5()">  Calendar   </button>
-    <button class="btn" onclick="navigate6()">  Contacts   </button>
-    
+  <div>
+    <button onclick="navigate1()">  Areas      </button>
+    <button onclick="navigate2()">  Projects   </button>  
+    <button onclick="navigate3()">  Tasks      </button>
+    <button onclick="navigate4()">  Resources  </button>
+    <button onclick="navigate5()">  Calendar   </button>
+    <button onclick="navigate6()">  Contacts   </button>
+
     <script>
       function navigate1() {  window.open("https://www.notion.so/rawrtism/7b2310c163644471be1fe4d20e77f3b4?v=e18650ea917844eb9d873e4b84f75234&pvs=4", '_parent').focus();  }
       function navigate2() {  window.open("https://www.notion.so/rawrtism/120b27541b5f4ce4a7b8cf2863c55086?v=f0617ed566d04ea985a2212819ef44e9&pvs=4", '_parent').focus();  }
@@ -60,7 +46,6 @@
       function navigate5() {  window.open("https://www.notion.so/rawrtism/fc87275fe9ee4ada89053930137ea4d3?v=ed9c70159e7347a1ac86ab2fed7a16a7&pvs=4", '_parent').focus();  }
       function navigate6() {  window.open("https://www.notion.so/rawrtism/3cfd16c05cee49b2840851c0052b192b?v=4747002f7fe54b088f68550e69c5d46f&pvs=4", '_parent').focus();  }
     </script>
-
   </div>
 
 </body>
