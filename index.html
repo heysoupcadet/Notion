@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/cd74d8bf1e.js" crossorigin="anonymous"></script>
   <style>
+    div           {  display:           flex;
+                     justify-content:   space-between;
+                     margin:            0px;
+                     padding:           8px 0px 0px 0px;
+                     border:            2px 0px 0px 0px solid #373737;
+                     width:             100%;
+                  }
     button        {  width:             13%;
                      padding:           13px 0px;
                      border:            none;
                      border-radius:     10px;
                      background-color:  #2a2a2a;
                      box-shadow:        0px 5px 2px  #101010;
-                     text-align:        center;
+                     justify-content:   flex-start;
                      font-family:       "times new roman";
                      font-size:         16px;
                      color:             #ffffff;
                      cursor:            pointer;
                   }
-    button:hover  {  background-color:  #252525;
+    button:hover  {  background-color:  #252525;  }
+    button:active {  box-shadow:        none;     }
+    
+    span          {  width:             10%;
+                     float:             left;
+                     margin:            0px 2px;
                   }
-    button:active {  box-shadow:        none;
+    i             {  color:             #101010;
+                     font-size:         larger;
+                     text-align:        center;
                   }
-    div           {  display:           flex;
-                     justify-content:   space-between;
-                     margins:           0px;
-                     padding:           8px 0px 0px 0px;
-                     border:            2px 0px 0px 0px solid #373737;
-                     width:             100%;
-                  }
+
   </style>
 </head>
 
 <body>
   <div>
-    <button onclick="navigate1()">  <i class="fas fa-folder">           </i>  Areas      </button>        
-    <button onclick="navigate2()">  <i class="fas fa-diagram-project">  </i>  Projects   </button>        
-    <button onclick="navigate3()">  <i class="fas fa-list-check">       </i>  Tasks      </button>        
-    <button onclick="navigate4()">  <i class="fas fa-bookmark">         </i>  Resources  </button>        
-    <button onclick="navigate5()">  <i class="fas fa-calendar-days">    </i>  Calendar   </button>        
-    <button onclick="navigate6()">  <i class="fas fa-address-book">     </i>  Contacts   </button>        
-    <button onclick="navigate7()">  <i class="fas fa-box-archive">      </i>  Archive    </button>        
+    <button onclick="navigate1()">  <span><i class="fas fa-folder">           </span>  </i>  Areas      </button>        
+    <button onclick="navigate2()">  <span><i class="fas fa-diagram-project">  </span>  </i>  Projects   </button>        
+    <button onclick="navigate3()">  <span><i class="fas fa-list-check">       </span>  </i>  Tasks      </button>        
+    <button onclick="navigate4()">  <span><i class="fas fa-bookmark">         </span>  </i>  Resources  </button>        
+    <button onclick="navigate5()">  <span><i class="fas fa-calendar-days">    </span>  </i>  Calendar   </button>        
+    <button onclick="navigate6()">  <span><i class="fas fa-address-book">     </span>  </i>  Contacts   </button>        
+    <button onclick="navigate7()">  <span><i class="fas fa-box-archive">      </span>  </i>  Archive    </button>        
 
     <script>
       function navigate1() {  window.open("https://www.notion.so/rawrtism/7b2310c163644471be1fe4d20e77f3b4?v=e18650ea917844eb9d873e4b84f75234&pvs=4", '_parent').focus();  }
