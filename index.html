@@ -4,64 +4,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/cd74d8bf1e.js" crossorigin="anonymous"></script>
   <style>
-    #top-line     {  height:            1px;
-                     background-color:  #383838;
-                     margin:            0px 0px 10px 0px;
-                  }
-    div           {  display:           flex;
-                     justify-content:   space-between;
-                     width:             100%;
-                     margin:            0px;
-                     padding:           0px;
-                     border:            none;
-                  }
-    button        {  display:           flex;
-                     text-align:        left;
-                     align-items:       center;
-                     width:             13.5%;
-                     padding:           8px 10px;
-                     margin:            0px;
-                     border:            1px solid #2f2f2f;
-                     border-radius:     4px;
-                     background-color:  #282828;
-                     box-shadow:        1px 3px 3px  #101010;
-                     font-family:       "times new roman";
-                     font-size:         13px;
-                     color:             #eaeaea;
-                     cursor:            pointer;
-                  }
-    button:hover  {  color:             #fafafa;
-                     background-color:  #333333;
-                     border:            1px solid #393939;
-                     }
-    button:active {  box-shadow:        none;
-                     border:            none;}
+    div              {  display:           flex;
+                        justify-content:   space-between;
+                        vertical-align:    middle;
+                        width:             100%;
+                        margin:            0px;
+                        padding:           0px;
+                        border:            none;  }
     
-    span          {  display:           inline-flex;
-                     text-align:        center;
-                     align-items:       center;
-                     float:             left;
-                     aspect-ratio:      1/1;
-                     padding:           none;
-                     margin-right:      8px;
-                     box-shadow:        none;
-                     color:             #fafafa;
-                     font-size:         15px;
-                  }
-    span:hover    {  color:             #fafafa;  }
+    button           {  width:             13.5%;
+                        aspect-ratio:      1/6;
+                        vertical-align:    middle;
+                        padding:           8px 6px;
+                        margin:            0px;
+                        border:            1px solid #2f2f2f;
+                        border-radius:     4px;
+                        background-color:  #282828;
+                        box-shadow:        1px 3px 2px  #101010;
+                        cursor:            pointer;  }
+    button:hover     {  color:             #fafafa;
+                        background-color:  #333333;
+                        border:            1px solid #393939;  }
+    button:active    {  box-shadow:        none;
+                        border:            none;}
+    
+    span             {  display:           inline-block;
+                        padding:           none;
+                        margin:            0px 4px;
+                        height:            100%;
+                        width:             auto;
+                        border:            none;
+                        border-radius:     none;
+                        box-shadow:        none;  }
 
+    span.icon        {  font-size:         100%;
+                        aspect-ratio:      1/1;
+                        text-align:        center;
+                        color:             #fafafa;  }
+    span.icon:hover  {  color:             #ffffff;  }
+    
+    span.text        {  text-indent:       10px;
+                        font-size:         90%;
+                        font-family:       "times new roman";
+                        color:             #eaeaea;}
+    span.text:hover  {  color:             #efefef;}
   </style>
 </head>
 
 <body>
   <div>
-    <button onclick="navigate1()">  <span><i class="fas fa-folder">           </i>  </span>  Areas      </button>        
-    <button onclick="navigate2()">  <span><i class="fas fa-diagram-project">  </i>  </span>  Projects   </button>        
-    <button onclick="navigate3()">  <span><i class="fas fa-list-check">       </i>  </span>  Tasks      </button>        
-    <button onclick="navigate4()">  <span><i class="fas fa-bookmark">         </i>  </span>  Resources  </button>        
-    <button onclick="navigate5()">  <span><i class="fas fa-calendar-days">    </i>  </span>  Calendar   </button>        
-    <button onclick="navigate6()">  <span><i class="fas fa-address-book">     </i>  </span>  Contacts   </button>        
-    <button onclick="navigate7()">  <span><i class="fas fa-box-archive">      </i>  </span>  Archive    </button>        
+    <button onclick="navigate1()">      <span class=icon> <i class="fas fa-folder">          </i> </span>      <span class=text> Areas     </span>      </button>        
+    <button onclick="navigate2()">      <span class=icon> <i class="fas fa-diagram-project"> </i> </span>      <span class=text> Projects  </span>      </button>        
+    <button onclick="navigate3()">      <span class=icon> <i class="fas fa-list-check">      </i> </span>      <span class=text> Tasks     </span>      </button>        
+    <button onclick="navigate4()">      <span class=icon> <i class="fas fa-bookmark">        </i> </span>      <span class=text> Resources </span>      </button>        
+    <button onclick="navigate5()">      <span class=icon> <i class="fas fa-calendar-days">   </i> </span>      <span class=text> Calendar  </span>      </button>        
+    <button onclick="navigate6()">      <span class=icon> <i class="fas fa-address-book">    </i> </span>      <span class=text> Contacts  </span>      </button>        
+    <button onclick="navigate7()">      <span class=icon> <i class="fas fa-box-archive">     </i> </span>      <span class=text> Archive   </span>      </button>        
 
     <script>
       function navigate1() {  window.open("https://www.notion.so/rawrtism/7b2310c163644471be1fe4d20e77f3b4?v=e18650ea917844eb9d873e4b84f75234&pvs=4", '_parent').focus();  }
