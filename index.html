@@ -8,11 +8,17 @@
                      justify-content:   space-between;
                      margin:            0px;
                      padding:           8px 0px 0px 0px;
-                     border:            2px 0px 0px 0px solid #373737;
+                     border:            10px 0px 0px 0px solid #373737;
                      width:             100%;
                   }
+    #top-line     {  height:            2px;
+                     background-color:  #373737;
+                     margin:            0px 0px 5px 0px; 
+                     padding:           0px;
+                     border:            none;
+                  }
     button        {  width:             13%;
-                     padding:           12px 8px;
+                     padding:           12px 10px;
                      border:            none;
                      margin:            0px;
                      border-radius:     10px;
@@ -29,7 +35,7 @@
     
     span          {  width:             10%;
                      padding:           0px;
-                     margin:            0px 2px 0px 0px;
+                     margin:            0px 5px 0px 0px;
                      border-radius:     initial;
                      box-shadow:        none;
                      float:             left;
@@ -43,6 +49,7 @@
 </head>
 
 <body>
+  <div id="top-line">  </div>
   <div>
     <button onclick="navigate1()">  <span><i class="fas fa-folder">           </i>  </span>  Areas      </button>        
     <button onclick="navigate2()">  <span><i class="fas fa-diagram-project">  </i>  </span>  Projects   </button>        
@@ -60,8 +67,7 @@
       function navigate5() {  window.open("https://www.notion.so/rawrtism/fc87275fe9ee4ada89053930137ea4d3?v=ed9c70159e7347a1ac86ab2fed7a16a7&pvs=4", '_parent').focus();  }
       function navigate6() {  window.open("https://www.notion.so/rawrtism/3cfd16c05cee49b2840851c0052b192b?v=4747002f7fe54b088f68550e69c5d46f&pvs=4", '_parent').focus();  }
       function navigate7() {  window.open("https://www.notion.so/rawrtism/c2258e2ac514433d9c447cf69223b810?v=b632054438234915bb4a42f280e718f1&pvs=4", '_parent').focus();  }
-    </script>
-  </div>
+    </script>  </div>
 
 </body>
 </html>
